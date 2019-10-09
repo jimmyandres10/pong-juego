@@ -54,7 +54,7 @@ ball.dy = 0.3
 score = turtle.Turtle()
 score.speed(0)
 ball.shape("square")
-score.color("black")
+score.color("white")
 score.penup()
 score.hideturtle()
 score.goto(0, 260)
@@ -134,7 +134,7 @@ while True:
         ball.goto(0,0)
         score_a += 1
         score.clear()
-        score.write("Player Purple: {}   Player blue: {} ".format(score_a, score_b), align="center", font=("courier", 24, "normal"))
+        score.write("Player red: {}   Player blue: {} ".format(score_a, score_b), align="center", font=("courier", 24, "normal"))
         winsound.PlaySound("son2.mp3",winsound.SND_ASYNC)
         ball.dx *= -1
 
@@ -142,7 +142,7 @@ while True:
         ball.goto(0,0)
         score_b += 1
         score.clear()
-        score.write("Player Purple: {}   Player blue: {} ".format(score_a, score_b), align="center", font=("courier", 24, "normal"))
+        score.write("Player red: {}   Player blue: {} ".format(score_a, score_b), align="center", font=("courier", 24, "normal"))
         winsound.PlaySound("son2.mp3",winsound.SND_ASYNC)
         ball.dx *= -1
 
